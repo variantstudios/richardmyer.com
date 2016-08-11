@@ -32,10 +32,6 @@ defaults:
       type: sculptures
     values:
       layout: sculpture
-      title:
-      image_path:
-      description:
-      sculpture_category:
     scope:
       type: events
     values:
