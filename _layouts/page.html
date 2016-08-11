@@ -11,6 +11,8 @@ layout: default
       {% include contact-form.html %}
       {% elsif page.url contains "events" %}
         {% include events.html %}
+        {% elsif page.url contains "sculptures" %}
+          {% include sculptures.html %}
     {% endif %}
   </section>
 </main>
