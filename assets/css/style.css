@@ -11,7 +11,7 @@
 
 /* line 1, ../sass/partials/styleguide/type/_base-type.scss */
 html {
-  font: normal 100%/1.65 serif;
+  font: normal 100%/1.65 "freight-text-pro", serif;
   -webkit-text-size-adjust: 100%;
   /* Prevent font scaling in landscape while allowing user zoom */
 }
@@ -95,8 +95,15 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   margin: 16px 0;
   line-height: 1.3;
-  color: #0f7abd;
-  font-family: sans-serif;
+  color: #b97d3f;
+  font-family: "brandon-grotesque", sans-serif;
+}
+
+/* line 24, ../sass/partials/styleguide/type/_headings.scss */
+.pagetitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.4em;
 }
 
 /* line 1, ../sass/partials/styleguide/type/_links.scss */
@@ -126,20 +133,20 @@ div.btn a {
   display: block;
   text-decoration: none;
   text-align: center;
-  background-color: #0f7abd;
-  border: 1px solid #0d6ba5;
+  background-color: #b97d3f;
+  border: 1px solid #a67039;
   border-radius: 2px;
   color: white;
   cursor: pointer;
   padding: .5em 1.25em;
   font-size: 95%;
-  font-family: sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   -webkit-transition: all linear 0.2s;
   transition: all linear 0.2s;
 }
 /* line 56, ../sass/partials/global/_mixins.scss */
 div.btn a:hover {
-  background-color: #0e74b4;
+  background-color: #b1783c;
 }
 /* line 27, ../sass/partials/styleguide/type/_links.scss */
 div.btn a:hover {
@@ -177,14 +184,14 @@ input[type="text"], input[type="email"], input[type="name"], input[type="passwor
           box-sizing: border-box;
   padding: .5em 1em;
   font-size: 100%;
-  font-family: serif;
+  font-family: "freight-text-pro", serif;
   border: 1px solid #D3D3D3;
   border-radius: 3px;
   margin-bottom: .5em;
 }
 /* line 9, ../sass/partials/styleguide/forms/_inputs.scss */
 input[type="text"]:active, input[type="text"]:focus, input[type="email"]:active, input[type="email"]:focus, input[type="name"]:active, input[type="name"]:focus, input[type="password"]:active, input[type="password"]:focus, input[type="file"]:active, input[type="file"]:focus {
-  border: 1px solid #0f7abd;
+  border: 1px solid #b97d3f;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -199,11 +206,11 @@ textarea {
   font-size: 100%;
   border: 1px solid #D3D3D3;
   border-radius: 3px;
-  font-family: serif;
+  font-family: "freight-text-pro", serif;
 }
 /* line 9, ../sass/partials/styleguide/forms/_textarea.scss */
 textarea:active, textarea:focus {
-  border: 1px solid #0f7abd;
+  border: 1px solid #b97d3f;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -218,7 +225,7 @@ input[type="submit"] {
   cursor: pointer;
   padding: .5em 1.25em;
   font-size: 100%;
-  font-family: sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   display: inline-block;
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), inset 0px 2px 0px 0px white;
           box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), inset 0px 2px 0px 0px white;
@@ -313,6 +320,7 @@ ul.pager li a:visited {
 .logo img {
   display: block;
   margin: 0 auto 0 auto;
+  max-height: 45px;
 }
 @media (min-width: 50em) {
   /* line 2, ../sass/partials/design/blocks/_logo.scss */
@@ -320,7 +328,7 @@ ul.pager li a:visited {
     margin: 0;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .logo img {
   margin: 0;
 }
@@ -329,6 +337,7 @@ ul.pager li a:visited {
 .menu {
   padding: 0;
   margin: 0;
+  font-size: 1.2em;
 }
 @media (min-width: 50em) {
   /* line 1, ../sass/partials/design/blocks/_main-navigation.scss */
@@ -336,11 +345,11 @@ ul.pager li a:visited {
     text-align: right;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .menu {
   text-align: right;
 }
-/* line 7, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 8, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li {
   list-style: none;
   margin: 0;
@@ -348,16 +357,14 @@ ul.pager li a:visited {
   padding: 0;
 }
 @media (min-width: 50em) {
-  /* line 7, ../sass/partials/design/blocks/_main-navigation.scss */
+  /* line 8, ../sass/partials/design/blocks/_main-navigation.scss */
   .menu li {
     display: inline-block;
-    line-height: 3em;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .menu li {
   display: inline-block;
-  line-height: 3em;
 }
 /* line 16, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a {
@@ -368,7 +375,6 @@ ul.pager li a:visited {
   padding: .75em 1em;
   display: block;
   color: #000;
-  text-transform: uppercase;
 }
 @media (min-width: 50em) {
   /* line 16, ../sass/partials/design/blocks/_main-navigation.scss */
@@ -377,26 +383,26 @@ ul.pager li a:visited {
     padding: 0;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .menu li a {
   margin-left: 1.5em;
   padding: 0;
 }
-/* line 28, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 27, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:hover {
-  color: #0f7abd;
+  color: #b97d3f;
 }
-/* line 31, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 30, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:active {
   top: 1px;
   position: relative;
 }
-/* line 37, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 36, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu a, .menu a:visited {
   text-decoration: none;
 }
 
-/* line 41, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 40, ../sass/partials/design/blocks/_main-navigation.scss */
 .js .main-nav .menu {
   max-height: 0;
   overflow: hidden;
@@ -404,24 +410,24 @@ ul.pager li a:visited {
           transition: max-height .5s ease;
 }
 @media (min-width: 50em) {
-  /* line 41, ../sass/partials/design/blocks/_main-navigation.scss */
+  /* line 40, ../sass/partials/design/blocks/_main-navigation.scss */
   .js .main-nav .menu {
     max-height: none;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .js .main-nav .menu {
   max-height: none;
 }
-/* line 48, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 47, ../sass/partials/design/blocks/_main-navigation.scss */
 .js .main-nav .menu.show {
   max-height: 500px;
 }
 
-/* line 52, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 51, ../sass/partials/design/blocks/_main-navigation.scss */
 .js .menu-btn {
   padding: 1em;
-  background: #0f7abd;
+  background: #b97d3f;
   border: none;
   color: #fff;
   font-weight: 700;
@@ -429,28 +435,379 @@ ul.pager li a:visited {
   text-align: center;
 }
 @media (min-width: 50em) {
-  /* line 52, ../sass/partials/design/blocks/_main-navigation.scss */
+  /* line 51, ../sass/partials/design/blocks/_main-navigation.scss */
   .js .menu-btn {
     display: none;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .js .menu-btn {
   display: none;
 }
-/* line 63, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 62, ../sass/partials/design/blocks/_main-navigation.scss */
 .js .menu-btn img {
   padding-right: .5em;
 }
 
-/* line 67, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 66, ../sass/partials/design/blocks/_main-navigation.scss */
 .no-js .menu-btn {
   display: none;
 }
 
-/* line 1, ../sass/partials/design/regions/_header.scss */
-.logo {
-  text-align: center;
+/* line 1, ../sass/partials/design/pages/_sculptures.scss */
+.grid {
+  position: relative;
+  margin: 0 auto;
+  width: 100% !important;
+}
+
+/* line 7, ../sass/partials/design/pages/_sculptures.scss */
+.js .grid::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-size: 60px auto;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+/* line 21, ../sass/partials/design/pages/_sculptures.scss */
+.js .grid--loaded::after {
+  opacity: 0;
+}
+
+/* line 25, ../sass/partials/design/pages/_sculptures.scss */
+.grid__item {
+  width: 270px;
+  padding: 10px;
+  width: 25% !important;
+}
+
+/* line 31, ../sass/partials/design/pages/_sculptures.scss */
+.grid__item--current {
+  opacity: 0 !important;
+}
+
+/* line 35, ../sass/partials/design/pages/_sculptures.scss */
+.img-wrap {
+  display: block;
+}
+
+/* line 39, ../sass/partials/design/pages/_sculptures.scss */
+.img-wrap:focus,
+.img-wrap:hover {
+  outline: none;
+}
+
+/* line 44, ../sass/partials/design/pages/_sculptures.scss */
+.img-wrap img {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 49, ../sass/partials/design/pages/_sculptures.scss */
+.preview {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* line 71, ../sass/partials/design/pages/_sculptures.scss */
+.preview::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #3c322a;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+/* line 82, ../sass/partials/design/pages/_sculptures.scss */
+.preview::before * {
+  color: #fff;
+}
+
+/* line 87, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open {
+  pointer-events: auto;
+}
+
+/* line 91, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open::before {
+  opacity: 1;
+}
+
+/* line 95, ../sass/partials/design/pages/_sculptures.scss */
+.clone {
+  position: fixed;
+  z-index: 110;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 103, ../sass/partials/design/pages/_sculptures.scss */
+.original {
+  position: relative;
+  z-index: 120;
+  display: block;
+  object-fit: contain;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  -webkit-backface-visibility: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24706) 5px 0px 11px;
+          box-shadow: rgba(0, 0, 0, 0.24706) 5px 0px 11px;
+}
+
+/* line 114, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open .animate {
+  /* open */
+  -webkit-transition: -webkit-transform 0.6s, opacity 0.2s;
+  transition: transform 0.6s, opacity 0.2s;
+}
+
+/* line 120, ../sass/partials/design/pages/_sculptures.scss */
+.animate {
+  /* close */
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+/* line 126, ../sass/partials/design/pages/_sculptures.scss */
+.description {
+  color: #fff;
+}
+
+/* line 130, ../sass/partials/design/pages/_sculptures.scss */
+.js .description--grid {
+  display: none;
+}
+
+/* line 134, ../sass/partials/design/pages/_sculptures.scss */
+.description--preview {
+  font-size: 2em;
+  position: absolute;
+  z-index: 140;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  padding: 0 1em;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  opacity: 0;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+}
+
+/* line 164, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open .description--preview {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 172, ../sass/partials/design/pages/_sculptures.scss */
+.description--preview h3 {
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1em;
+}
+
+/* line 180, ../sass/partials/design/pages/_sculptures.scss */
+.description--preview p {
+  font-size: 0.65em;
+  max-width: 100%;
+}
+
+/* line 185, ../sass/partials/design/pages/_sculptures.scss */
+.description--preview p em {
+  color: #5D5D5D;
+  display: block;
+  padding: 0.4em 0 0 0;
+}
+
+/* Details */
+/* line 194, ../sass/partials/design/pages/_sculptures.scss */
+.details {
+  max-width: 100%;
+  /* IE 10-11 bug flexbox */
+}
+
+/* line 199, ../sass/partials/design/pages/_sculptures.scss */
+.details ul {
+  line-height: 1;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 207, ../sass/partials/design/pages/_sculptures.scss */
+.details ul li {
+  font-size: 0.65em;
+  position: relative;
+  display: inline-block;
+  margin: 0 1em 0 0;
+  padding: 0.15em 0;
+  white-space: nowrap;
+  opacity: 0;
+  color: #e2e2e2;
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 224, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open .details ul li {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 230, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open .details ul li:nth-child(1) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* line 235, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open .details ul li:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* line 240, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open .details ul li:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 245, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open .details ul li:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+/* line 250, ../sass/partials/design/pages/_sculptures.scss */
+.preview--open .details ul li:nth-child(5) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+/* Close button */
+/* line 257, ../sass/partials/design/pages/_sculptures.scss */
+.action {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: top;
+  color: #6bd68a;
+  border: none;
+  background: none;
+}
+
+/* line 268, ../sass/partials/design/pages/_sculptures.scss */
+.action:hover,
+.action:focus {
+  color: #6bd68a;
+  outline: none;
+}
+
+/* line 274, ../sass/partials/design/pages/_sculptures.scss */
+.action--close {
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: scale3d(0.6, 0.6, 1);
+  transform: scale3d(0.6, 0.6, 1);
+}
+
+/* line 287, ../sass/partials/design/pages/_sculptures.scss */
+.preview--image-loaded .action--close {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 293, ../sass/partials/design/pages/_sculptures.scss */
+.text-hidden {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* line 301, ../sass/partials/design/pages/_sculptures.scss */
+button.action img {
+  width: 30px;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 305, ../sass/partials/design/pages/_sculptures.scss */
+  .description--preview h3 {
+    font-size: 0.5em;
+  }
+
+  /* line 308, ../sass/partials/design/pages/_sculptures.scss */
+  .description--preview p,
+  .details {
+    display: none;
+  }
 }
 @media (min-width: 50em) {
   /* line 1, ../sass/partials/design/regions/_header.scss */
@@ -462,7 +819,7 @@ ul.pager li a:visited {
     clear: none;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .logo {
   width: 33.33333%;
   float: left;
@@ -472,7 +829,7 @@ ul.pager li a:visited {
 }
 
 @media (min-width: 50em) {
-  /* line 7, ../sass/partials/design/regions/_header.scss */
+  /* line 6, ../sass/partials/design/regions/_header.scss */
   .main-nav {
     width: 65.95745%;
     float: right;
@@ -481,7 +838,7 @@ ul.pager li a:visited {
     clear: none;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .main-nav {
   width: 65.95745%;
   float: right;
@@ -490,9 +847,9 @@ ul.pager li a:visited {
   clear: none;
 }
 
-/* line 13, ../sass/partials/design/regions/_header.scss */
+/* line 12, ../sass/partials/design/regions/_header.scss */
 .header-wrapper {
-  padding: 1em 0;
+  padding: 1.5em 0 1.25em;
   background: white;
 }
 
@@ -502,7 +859,7 @@ ul.pager li a:visited {
   margin: 0 auto;
   padding: 0 1em;
 }
-/* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
+/* line 13, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 .wrap:after {
   content: "";
   display: table;
@@ -512,8 +869,9 @@ ul.pager li a:visited {
 /* line 9, ../sass/partials/design/regions/_main.scss */
 main {
   padding: 2em 0;
+  background: #F7F6F5;
 }
-/* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
+/* line 13, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 main:after {
   content: "";
   display: table;
@@ -545,7 +903,7 @@ html body {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
+/* line 13, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 .wrap:after {
   content: "";
   display: table;
@@ -561,6 +919,12 @@ html body {
 /* line 24, ../sass/partials/design/regions/_body.scss */
 main, header, footer, section, aside {
   display: block;
+}
+
+/* line 4, ../sass/partials/design/views/_front.scss */
+.preface .flexslider {
+  margin: -2em 0 0;
+  border: 0;
 }
 
 /* line 2, ../sass/partials/design/views/_team.scss */
@@ -616,7 +980,7 @@ main, header, footer, section, aside {
   height: 25px;
   border-radius: 50%;
   margin-bottom: -5px;
-  border: 2px solid #0f7abd;
+  border: 2px solid #b97d3f;
 }
 /* line 16, ../sass/partials/design/views/_blog.scss */
 .blog-wrapper .right-blog ul {
@@ -629,7 +993,7 @@ main, header, footer, section, aside {
 }
 /* line 21, ../sass/partials/design/views/_blog.scss */
 .blog-wrapper .right-blog ul li.tag-label {
-  background: #0f7abd;
+  background: #b97d3f;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: .8rem;

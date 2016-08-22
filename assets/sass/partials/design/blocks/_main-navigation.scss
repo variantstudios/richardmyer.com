@@ -1,6 +1,7 @@
 .menu {
   padding: 0;
   margin: 0;
+  font-size: 1.2em;
   @include breakpoint($bp-medium, $no-query: '.no-mq') {
     text-align: right;
   }
@@ -11,7 +12,6 @@
     padding: 0;
     @include breakpoint($bp-medium, $no-query: '.no-mq') {
       display: inline-block;
-      line-height: 3em;
     }
     a {
       font-weight: 500;
@@ -20,7 +20,6 @@
       padding: .75em 1em;
       display: block;
       color: #000;
-      text-transform: uppercase;
       @include breakpoint($bp-medium, $no-query: '.no-mq') {
         margin-left: 1.5em;
         padding: 0;
