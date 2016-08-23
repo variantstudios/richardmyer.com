@@ -1,0 +1,1 @@
+$(document).ready(function(){var t=$("#sculptures").isotope({itemSelector:".grid__item",isFitWidth:!0});t.isotope({filter:"*"}),$("#filters").on("click","button",function(){var i=$(this).attr("data-filter");t.isotope({filter:i})})});

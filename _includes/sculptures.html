@@ -1,6 +1,12 @@
-<div class="grid">
+<div id="filters" class="button-group">
+  <button class="btn btn-primary" data-filter="*">show all</button>
+  <button class="btn btn-primary" data-filter=".Test">Test</button>
+  <button class="btn btn-primary" data-filter=".Globes">Globes</button>
+</div>
+
+<div class="grid" id="sculptures">
     {% for sculpture in site.sculptures %}
-	<div class="grid__item" data-size="800x1039">
+	<div class="grid__item {{sculpture.sculpture_category}}" data-size="800x1039">
 		<a href="{{sculpture.image_path}}" class="img-wrap"><img src="{{sculpture.image_path}}" alt="img06" />
 			<div class="description description--grid">
 				<h3>{{sculpture.title}}</h3>
@@ -25,4 +31,3 @@
     </button>
     <div class="description description--preview"></div>
 </div>
-
