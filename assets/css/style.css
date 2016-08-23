@@ -11,7 +11,7 @@
 
 /* line 1, ../sass/partials/styleguide/type/_base-type.scss */
 html {
-  font: normal 120%/1.65 "freight-text-pro", serif;
+  font: normal 110%/1.65 "freight-text-pro", serif;
   -webkit-text-size-adjust: 100%;
   /* Prevent font scaling in landscape while allowing user zoom */
 }
@@ -328,130 +328,72 @@ ul.pager li a:visited {
     margin: 0;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .logo img {
   margin: 0;
 }
 
 /* line 1, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu {
-  padding: 0;
+  padding: 1.5em 0 0;
   margin: 0;
-  font-size: 1.2em;
+  text-align: center;
 }
 @media (min-width: 50em) {
   /* line 1, ../sass/partials/design/blocks/_main-navigation.scss */
   .menu {
     text-align: right;
+    padding: 0;
+    font-size: 1.2em;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .menu {
   text-align: right;
+  padding: 0;
+  font-size: 1.2em;
 }
-/* line 8, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 10, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li {
   list-style: none;
   margin: 0;
-  display: block;
+  display: inline-block;
   padding: 0;
 }
-@media (min-width: 50em) {
-  /* line 8, ../sass/partials/design/blocks/_main-navigation.scss */
-  .menu li {
-    display: inline-block;
-  }
-}
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .menu li {
-  display: inline-block;
-}
-/* line 16, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 15, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a {
   font-weight: 500;
   font-size: 1em;
   -webkit-transition: color .5s ease;
           transition: color .5s ease;
-  padding: .75em 1em;
+  padding: .25em 1em;
   display: block;
   color: #000;
 }
 @media (min-width: 50em) {
-  /* line 16, ../sass/partials/design/blocks/_main-navigation.scss */
+  /* line 15, ../sass/partials/design/blocks/_main-navigation.scss */
   .menu li a {
     margin-left: 1.5em;
     padding: 0;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .menu li a {
   margin-left: 1.5em;
   padding: 0;
 }
-/* line 27, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 26, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:hover {
   color: #b97d3f;
 }
-/* line 30, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 29, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:active {
   top: 1px;
   position: relative;
 }
-/* line 36, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 35, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu a, .menu a:visited {
   text-decoration: none;
-}
-
-/* line 40, ../sass/partials/design/blocks/_main-navigation.scss */
-.js .main-nav .menu {
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height .5s ease;
-          transition: max-height .5s ease;
-}
-@media (min-width: 50em) {
-  /* line 40, ../sass/partials/design/blocks/_main-navigation.scss */
-  .js .main-nav .menu {
-    max-height: none;
-  }
-}
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .js .main-nav .menu {
-  max-height: none;
-}
-/* line 47, ../sass/partials/design/blocks/_main-navigation.scss */
-.js .main-nav .menu.show {
-  max-height: 500px;
-}
-
-/* line 51, ../sass/partials/design/blocks/_main-navigation.scss */
-.js .menu-btn {
-  padding: 1em;
-  background: #b97d3f;
-  border: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.1em;
-  text-align: center;
-}
-@media (min-width: 50em) {
-  /* line 51, ../sass/partials/design/blocks/_main-navigation.scss */
-  .js .menu-btn {
-    display: none;
-  }
-}
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .js .menu-btn {
-  display: none;
-}
-/* line 62, ../sass/partials/design/blocks/_main-navigation.scss */
-.js .menu-btn img {
-  padding-right: .5em;
-}
-
-/* line 66, ../sass/partials/design/blocks/_main-navigation.scss */
-.no-js .menu-btn {
-  display: none;
 }
 
 /* line 2, ../sass/partials/design/pages/_about.scss */
@@ -496,32 +438,53 @@ ul.pager li a:visited {
 .grid__item {
   width: 270px;
   padding: 10px;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  /* line 25, ../sass/partials/design/pages/_sculptures.scss */
+  .grid__item {
+    width: 25% !important;
+  }
+}
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .grid__item {
   width: 25% !important;
 }
+/* line 32, ../sass/partials/design/pages/_sculptures.scss */
+.grid__item a {
+  text-decoration: none;
+}
+/* line 35, ../sass/partials/design/pages/_sculptures.scss */
+.grid__item h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
 
-/* line 31, ../sass/partials/design/pages/_sculptures.scss */
+/* line 43, ../sass/partials/design/pages/_sculptures.scss */
 .grid__item--current {
   opacity: 0 !important;
 }
 
-/* line 35, ../sass/partials/design/pages/_sculptures.scss */
+/* line 47, ../sass/partials/design/pages/_sculptures.scss */
 .img-wrap {
   display: block;
 }
 
-/* line 39, ../sass/partials/design/pages/_sculptures.scss */
+/* line 51, ../sass/partials/design/pages/_sculptures.scss */
 .img-wrap:focus,
 .img-wrap:hover {
   outline: none;
 }
 
-/* line 44, ../sass/partials/design/pages/_sculptures.scss */
+/* line 56, ../sass/partials/design/pages/_sculptures.scss */
 .img-wrap img {
   display: block;
   max-width: 100%;
 }
 
-/* line 49, ../sass/partials/design/pages/_sculptures.scss */
+/* line 61, ../sass/partials/design/pages/_sculptures.scss */
 .preview {
   position: fixed;
   z-index: 1000;
@@ -544,7 +507,7 @@ ul.pager li a:visited {
   pointer-events: none;
 }
 
-/* line 71, ../sass/partials/design/pages/_sculptures.scss */
+/* line 83, ../sass/partials/design/pages/_sculptures.scss */
 .preview::before {
   content: '';
   position: fixed;
@@ -557,22 +520,22 @@ ul.pager li a:visited {
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
-/* line 82, ../sass/partials/design/pages/_sculptures.scss */
+/* line 94, ../sass/partials/design/pages/_sculptures.scss */
 .preview::before * {
   color: #fff;
 }
 
-/* line 87, ../sass/partials/design/pages/_sculptures.scss */
+/* line 99, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open {
   pointer-events: auto;
 }
 
-/* line 91, ../sass/partials/design/pages/_sculptures.scss */
+/* line 103, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open::before {
   opacity: 1;
 }
 
-/* line 95, ../sass/partials/design/pages/_sculptures.scss */
+/* line 107, ../sass/partials/design/pages/_sculptures.scss */
 .clone {
   position: fixed;
   z-index: 110;
@@ -581,7 +544,7 @@ ul.pager li a:visited {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 103, ../sass/partials/design/pages/_sculptures.scss */
+/* line 115, ../sass/partials/design/pages/_sculptures.scss */
 .original {
   position: relative;
   z-index: 120;
@@ -594,31 +557,37 @@ ul.pager li a:visited {
           box-shadow: rgba(0, 0, 0, 0.24706) 5px 0px 11px;
 }
 
-/* line 114, ../sass/partials/design/pages/_sculptures.scss */
+/* line 126, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open .animate {
   /* open */
   -webkit-transition: -webkit-transform 0.6s, opacity 0.2s;
   transition: transform 0.6s, opacity 0.2s;
 }
 
-/* line 120, ../sass/partials/design/pages/_sculptures.scss */
+/* line 132, ../sass/partials/design/pages/_sculptures.scss */
 .animate {
   /* close */
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
   transition: transform 0.3s, opacity 0.2s;
 }
 
-/* line 126, ../sass/partials/design/pages/_sculptures.scss */
+/* line 138, ../sass/partials/design/pages/_sculptures.scss */
 .description {
   color: #fff;
 }
 
-/* line 130, ../sass/partials/design/pages/_sculptures.scss */
-.js .description--grid {
+@media (min-width: 50em) {
+  /* line 142, ../sass/partials/design/pages/_sculptures.scss */
+  .js .description--grid {
+    display: none;
+  }
+}
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .js .description--grid {
   display: none;
 }
 
-/* line 134, ../sass/partials/design/pages/_sculptures.scss */
+/* line 148, ../sass/partials/design/pages/_sculptures.scss */
 .description--preview {
   font-size: 2em;
   position: absolute;
@@ -651,7 +620,7 @@ ul.pager li a:visited {
   transform: translate3d(0, 30px, 0);
 }
 
-/* line 164, ../sass/partials/design/pages/_sculptures.scss */
+/* line 178, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open .description--preview {
   opacity: 1;
   -webkit-transition-delay: 0.2s;
@@ -660,7 +629,7 @@ ul.pager li a:visited {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 172, ../sass/partials/design/pages/_sculptures.scss */
+/* line 186, ../sass/partials/design/pages/_sculptures.scss */
 .description--preview h3 {
   font-weight: normal;
   margin: 0;
@@ -669,13 +638,13 @@ ul.pager li a:visited {
   font-size: 1em;
 }
 
-/* line 180, ../sass/partials/design/pages/_sculptures.scss */
+/* line 194, ../sass/partials/design/pages/_sculptures.scss */
 .description--preview p {
   font-size: 0.65em;
   max-width: 100%;
 }
 
-/* line 185, ../sass/partials/design/pages/_sculptures.scss */
+/* line 199, ../sass/partials/design/pages/_sculptures.scss */
 .description--preview p em {
   color: #5D5D5D;
   display: block;
@@ -683,13 +652,13 @@ ul.pager li a:visited {
 }
 
 /* Details */
-/* line 194, ../sass/partials/design/pages/_sculptures.scss */
+/* line 208, ../sass/partials/design/pages/_sculptures.scss */
 .details {
   max-width: 100%;
   /* IE 10-11 bug flexbox */
 }
 
-/* line 199, ../sass/partials/design/pages/_sculptures.scss */
+/* line 213, ../sass/partials/design/pages/_sculptures.scss */
 .details ul {
   line-height: 1;
   position: relative;
@@ -698,7 +667,7 @@ ul.pager li a:visited {
   list-style: none;
 }
 
-/* line 207, ../sass/partials/design/pages/_sculptures.scss */
+/* line 221, ../sass/partials/design/pages/_sculptures.scss */
 .details ul li {
   font-size: 0.65em;
   position: relative;
@@ -716,45 +685,45 @@ ul.pager li a:visited {
   transform: translate3d(0, 20px, 0);
 }
 
-/* line 224, ../sass/partials/design/pages/_sculptures.scss */
+/* line 238, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open .details ul li {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 230, ../sass/partials/design/pages/_sculptures.scss */
+/* line 244, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open .details ul li:nth-child(1) {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
 
-/* line 235, ../sass/partials/design/pages/_sculptures.scss */
+/* line 249, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open .details ul li:nth-child(2) {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
 
-/* line 240, ../sass/partials/design/pages/_sculptures.scss */
+/* line 254, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open .details ul li:nth-child(3) {
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
 
-/* line 245, ../sass/partials/design/pages/_sculptures.scss */
+/* line 259, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open .details ul li:nth-child(4) {
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 
-/* line 250, ../sass/partials/design/pages/_sculptures.scss */
+/* line 264, ../sass/partials/design/pages/_sculptures.scss */
 .preview--open .details ul li:nth-child(5) {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
 
 /* Close button */
-/* line 257, ../sass/partials/design/pages/_sculptures.scss */
+/* line 271, ../sass/partials/design/pages/_sculptures.scss */
 .action {
   font-size: 1.5em;
   margin: 0;
@@ -766,14 +735,14 @@ ul.pager li a:visited {
   background: none;
 }
 
-/* line 268, ../sass/partials/design/pages/_sculptures.scss */
+/* line 282, ../sass/partials/design/pages/_sculptures.scss */
 .action:hover,
 .action:focus {
   color: #6bd68a;
   outline: none;
 }
 
-/* line 274, ../sass/partials/design/pages/_sculptures.scss */
+/* line 288, ../sass/partials/design/pages/_sculptures.scss */
 .action--close {
   position: fixed;
   z-index: 150;
@@ -787,14 +756,14 @@ ul.pager li a:visited {
   transform: scale3d(0.6, 0.6, 1);
 }
 
-/* line 287, ../sass/partials/design/pages/_sculptures.scss */
+/* line 301, ../sass/partials/design/pages/_sculptures.scss */
 .preview--image-loaded .action--close {
   opacity: 1;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
 
-/* line 293, ../sass/partials/design/pages/_sculptures.scss */
+/* line 307, ../sass/partials/design/pages/_sculptures.scss */
 .text-hidden {
   position: absolute;
   display: block;
@@ -804,18 +773,18 @@ ul.pager li a:visited {
   color: transparent;
 }
 
-/* line 301, ../sass/partials/design/pages/_sculptures.scss */
+/* line 315, ../sass/partials/design/pages/_sculptures.scss */
 button.action img {
   width: 30px;
 }
 
 @media screen and (max-width: 40em) {
-  /* line 305, ../sass/partials/design/pages/_sculptures.scss */
+  /* line 319, ../sass/partials/design/pages/_sculptures.scss */
   .description--preview h3 {
     font-size: 0.5em;
   }
 
-  /* line 308, ../sass/partials/design/pages/_sculptures.scss */
+  /* line 322, ../sass/partials/design/pages/_sculptures.scss */
   .description--preview p,
   .details {
     display: none;
@@ -825,7 +794,7 @@ button.action img {
 .footer-wrapper {
   padding: 1em 0 .5em 0;
 }
-/* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
+/* line 13, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 .footer-wrapper:after {
   content: "";
   display: table;
@@ -844,7 +813,7 @@ button.action img {
     text-align: left;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .left {
   width: 75%;
   float: left;
@@ -863,7 +832,7 @@ button.action img {
     text-align: right;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .right {
   width: 20%;
   float: right;
@@ -880,7 +849,7 @@ button.action img {
     clear: none;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .logo {
   width: 33.33333%;
   float: left;
@@ -899,7 +868,7 @@ button.action img {
     clear: none;
   }
 }
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .main-nav {
   width: 65.95745%;
   float: right;
@@ -920,7 +889,7 @@ button.action img {
   margin: 0 auto;
   padding: 0 1em;
 }
-/* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
+/* line 13, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 .wrap:after {
   content: "";
   display: table;
@@ -932,7 +901,7 @@ main {
   padding: 2em 0;
   background: #F7F6F5;
 }
-/* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
+/* line 13, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 main:after {
   content: "";
   display: table;
@@ -964,7 +933,7 @@ html body {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
+/* line 13, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 .wrap:after {
   content: "";
   display: table;

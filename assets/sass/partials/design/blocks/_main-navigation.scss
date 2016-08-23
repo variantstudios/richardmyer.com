@@ -1,23 +1,22 @@
 .menu {
-  padding: 0;
+  padding:1.5em 0 0;
   margin: 0;
-  font-size: 1.2em;
+  text-align: center;
   @include breakpoint($bp-medium, $no-query: '.no-mq') {
     text-align: right;
+    padding: 0;
+    font-size: 1.2em;
   }
   li {
     list-style: none;
     margin: 0;
-    display: block;
+    display: inline-block;
     padding: 0;
-    @include breakpoint($bp-medium, $no-query: '.no-mq') {
-      display: inline-block;
-    }
     a {
       font-weight: 500;
       font-size: 1em;
       transition: color .5s ease;
-      padding: .75em 1em;
+      padding: .25em 1em;
       display: block;
       color: #000;
       @include breakpoint($bp-medium, $no-query: '.no-mq') {
@@ -36,33 +35,4 @@
   a, a:visited {
     text-decoration: none;
   }
-}
-.js .main-nav .menu {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .5s ease;
-  @include breakpoint($bp-medium, $no-query: '.no-mq') {
-    max-height: none;
-  }
-  &.show {
-    max-height: 500px;
-  }
-}
-.js .menu-btn {
-  padding: 1em;
-  background: $color-one;
-  border: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.1em;
-  text-align: center;
-  @include breakpoint($bp-medium, $no-query: '.no-mq') {
-    display: none;
-  }
-  img {
-    padding-right: .5em;
-  }
-}
-.no-js .menu-btn {
-  display: none;
 }
