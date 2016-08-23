@@ -6,9 +6,9 @@ $(document).ready(function() {
     $('html').addClass('no-mq');
   }
   // Mobile Menu Funcation
-  $(".menu-btn").on('click touch', function() {
-    $('.menu').toggleClass('show');
-  });
+  // $(".menu-btn").on('click touch', function() {
+  //   $('.menu').toggleClass('show');
+  // });
 
   $('.flexslider').flexslider({
     animation: "slide",
