@@ -42,7 +42,7 @@ defaults:
 
 sculpture_categories:
     - 'Globes'
-    - 'Public Works and Monuments'
+    - 'Monuments'
     - 'Western'
 
 # typekit - Because we all need nice type faces.
