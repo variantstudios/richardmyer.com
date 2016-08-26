@@ -1,13 +1,13 @@
 <div id="filters" class="button-group">
-  <button class="btn btn-primary" data-filter="*">show all</button>
-  <button class="btn btn-primary" data-filter=".Test">Test</button>
-  <button class="btn btn-primary" data-filter=".Globes">Globes</button>
+    <button class="btn btn-primary" data-filter="*">show all</button>
+    {% for category in site.sculpture_categories %}
+    <button class="btn btn-primary" data-filter=".{{category}}">{{category}}</button>
+    {% endfor %}
 </div>
-
 <div class="grid" id="sculptures">
     {% for sculpture in site.sculptures %}
-	<div class="grid__item {{sculpture.sculpture_category}}" data-size="800x1039">
-		<a href="{{sculpture.image_path}}" class="img-wrap"><img src="{{sculpture.image_path}}" alt="img06" />
+	<div class="grid__item {{sculpture.sculpture_category}}" data-size=" {{sculpture.large_image_size}}">
+		<a href="{{sculpture.large_image_path}}" class="img-wrap"><img src="{{sculpture.small_image_path}}" alt="{{sculpture.title}} - {{sculpture.large_image_size}}" />
 			<div class="description description--grid">
 				<h3>{{sculpture.title}}</h3>
 				{% if sculpture.description != null %}<p>{{sculpture.description}}</p>{% endif %}

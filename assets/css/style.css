@@ -824,6 +824,7 @@ button.action img {
 /* line 1, ../sass/partials/design/regions/_footer.scss */
 .footer-wrapper {
   padding: 1em 0 .5em 0;
+  font-size: .8em;
 }
 /* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 .footer-wrapper:after {
@@ -832,12 +833,12 @@ button.action img {
   clear: both;
 }
 
-/* line 6, ../sass/partials/design/regions/_footer.scss */
+/* line 7, ../sass/partials/design/regions/_footer.scss */
 .left {
   text-align: center;
 }
 @media (min-width: 50em) {
-  /* line 6, ../sass/partials/design/regions/_footer.scss */
+  /* line 7, ../sass/partials/design/regions/_footer.scss */
   .left {
     width: 75%;
     float: left;
@@ -851,12 +852,12 @@ button.action img {
   text-align: left;
 }
 
-/* line 14, ../sass/partials/design/regions/_footer.scss */
+/* line 15, ../sass/partials/design/regions/_footer.scss */
 .right {
   text-align: center;
 }
 @media (min-width: 50em) {
-  /* line 14, ../sass/partials/design/regions/_footer.scss */
+  /* line 15, ../sass/partials/design/regions/_footer.scss */
   .right {
     width: 20%;
     float: right;
