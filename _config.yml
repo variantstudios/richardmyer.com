@@ -6,6 +6,7 @@ description: "Richard Myer, is a bronze sculptor "
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://orchid-lyrebird.cloudvent.net" # the base hostname & protocol for your site
 #timezone: America/Denver - Don't set for CloudCannon...for reasons.
+uploads_dir: "/assets/images/"
 version: "3.0.3" # the version of jekyll
 author.name: "Variant Studios"
 author.email: "team@variantstudios.com"

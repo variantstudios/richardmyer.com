@@ -790,6 +790,21 @@ button.action img {
     display: none;
   }
 }
+/* line 328, ../sass/partials/design/pages/_sculptures.scss */
+#filters {
+  margin: 0 0 1em 0;
+}
+
+/* line 331, ../sass/partials/design/pages/_sculptures.scss */
+button.btn.btn-primary {
+  border: solid #eee 2px;
+  margin-right: .5em;
+  border-radius: 3px;
+  background: none;
+  font-size: .8em;
+  color: #3d3d3d;
+}
+
 /* line 1, ../sass/partials/design/regions/_footer.scss */
 .footer-wrapper {
   padding: 1em 0 .5em 0;
