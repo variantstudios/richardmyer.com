@@ -1,8 +1,9 @@
 ---
-title: Sculptures
-permalink: "/sculptures/"
-description: ""
+title: Bronze Sculptures
+permalink: /sculptures/
+description:
 layout: page
 ---
 
-Coming Soon...
+
+Coming Soon…
