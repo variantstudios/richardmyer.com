@@ -6,4 +6,3 @@ layout: page
 ---
 
 
-Coming Soon…
