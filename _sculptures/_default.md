@@ -6,5 +6,6 @@ small_image_path:
 description:
 sculpture_category:
 dimensions:
+price: 
 weight: 0
 ---
