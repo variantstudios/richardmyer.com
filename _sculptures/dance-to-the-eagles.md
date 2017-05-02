@@ -6,5 +6,6 @@ small_image_path: /assets/images/bronze-sculptures/western/lg/dance-to-the-eagle
 description:
 sculpture_category: Western
 dimensions: 27hx18w
+price: $3,900
 weight: 0
 ---
