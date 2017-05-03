@@ -6,5 +6,6 @@ small_image_path: /assets/images/bronze-sculptures/globes/sm/handling-the-world.
 description:
 sculpture_category: Globes
 dimensions: 15h x 8w
+price: $1,100
 weight: 0
 ---
