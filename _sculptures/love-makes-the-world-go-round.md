@@ -6,5 +6,6 @@ small_image_path: /assets/images/bronze-sculptures/globes/sm/love-makes-the-worl
 description:
 sculpture_category: Globes
 dimensions: 13h x 12w
+price: $1,400
 weight: 0
 ---
