@@ -6,5 +6,6 @@ small_image_path: /assets/images/bronze-sculptures/globes/sm/prehistoric-world.j
 description:
 sculpture_category: Globes
 dimensions: 10h x 14w
+price: $2,700
 weight: 0
 ---
