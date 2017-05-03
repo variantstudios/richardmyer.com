@@ -6,5 +6,6 @@ small_image_path: /assets/images/bronze-sculptures/globes/sm/puzzled.jpg
 description:
 sculpture_category: Globes
 dimensions: 15h x 12w
+price: $2400
 weight: 0
 ---
