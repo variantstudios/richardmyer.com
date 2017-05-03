@@ -6,5 +6,6 @@ small_image_path: /assets/images/bronze-sculptures/globes/sm/guardians-of-the-ea
 description:
 sculpture_category: Globes
 dimensions: 15h x 8w
+price: $1,700
 weight: 2
 ---
