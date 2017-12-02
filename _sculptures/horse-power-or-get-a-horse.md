@@ -6,6 +6,6 @@ small_image_path: /assets/images/bronze-sculptures/western/lg/horse-power-or-get
 description: "SOLD"
 sculpture_category: Western
 dimensions: 15h x 26w
-price: $3,600
+price: "SOLD"
 weight: 0
 ---
